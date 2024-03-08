@@ -25,7 +25,7 @@ import { setMode, setLogout } from "state";
 import { useNavigate } from "react-router-dom";
 import FlexBetween from "components/FlexBetween";
 
-export default function Navbar (){
+const Navbar = () => {
   const [isMobileMenuToggled, setIsMobileMenuToggled] = useState(false);
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -39,7 +39,8 @@ export default function Navbar (){
   const primaryLight = theme.palette.primary.light;
   const alt = theme.palette.background.alt;
 
-  const fullName = `${user.firstName} ${user.lastName}`;
+  // const fullName = `${user.firstName} ${user.lastName}`;
+  const fullName ="hello"
 
   return (
     <FlexBetween padding="1rem 6%" backgroundColor={alt}>
@@ -56,7 +57,7 @@ export default function Navbar (){
             },
           }}
         >
-          Sociopedia
+         Friendify
         </Typography>
         {isNonMobileScreens && (
           <FlexBetween
@@ -193,3 +194,5 @@ export default function Navbar (){
     </FlexBetween>
   );
 };
+
+export default Navbar;
