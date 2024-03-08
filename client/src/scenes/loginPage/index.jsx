@@ -1,10 +1,9 @@
-import React from "react";
 import { Box, Typography, useTheme, useMediaQuery } from "@mui/material";
-// import { Form } from "react-router-dom";
-import Form from "./Form.jsx";
-export default function LoginPage() {
+import Form from "./Form";
+
+const LoginPage = () => {
   const theme = useTheme();
-  const isNonMobileScreens = useMediaQuery("(min-width:1000px)");
+  const isNonMobileScreens = useMediaQuery("(min-width: 1000px)");
   return (
     <Box>
       <Box
@@ -13,18 +12,8 @@ export default function LoginPage() {
         p="1rem 6%"
         textAlign="center"
       >
-        <Typography
-          fontWeight="bold"
-          fontSize="clamp(1rem, 2rem, 2.25rem)"
-          // color="primary"
-          sx={{
-            "&:hover": {
-              // color: primaryLight,
-              cursor: "pointer",
-            },
-          }}
-        >
-          Friendify
+        <Typography fontWeight="bold" fontSize="32px" color="primary">
+          Sociopedia
         </Typography>
       </Box>
 
@@ -35,11 +24,13 @@ export default function LoginPage() {
         borderRadius="1.5rem"
         backgroundColor={theme.palette.background.alt}
       >
-        <Typography fontWeight="500" varient="h5" sx={{mb:"1.5rem"}}>
-          Welcome to Friendify,the social Media for Sociopaths!
+        <Typography fontWeight="500" variant="h5" sx={{ mb: "1.5rem" }}>
+          Welcome to Socipedia, the Social Media for Sociopaths!
         </Typography>
-        <Form></Form>
+        <Form />
       </Box>
     </Box>
   );
-}
+};
+
+export default LoginPage;

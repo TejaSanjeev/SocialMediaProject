@@ -135,10 +135,10 @@ const Form = () => {
                   onChange={handleChange}
                   value={values.firstName}
                   name="firstName"
-                //   error={
-                //     Boolean(touched.firstName) && Boolean(errors.firstName)
-                //   }
-                //   helperText={touched.firstName && errors.firstName}
+                  error={
+                    Boolean(touched.firstName) && Boolean(errors.firstName)
+                  }
+                  helperText={touched.firstName && errors.firstName}
                   sx={{ gridColumn: "span 2" }}
                 />
                 <TextField
@@ -147,8 +147,8 @@ const Form = () => {
                   onChange={handleChange}
                   value={values.lastName}
                   name="lastName"
-                //   error={Boolean(touched.lastName) && Boolean(errors.lastName)}
-                //   helperText={touched.lastName && errors.lastName}
+                  error={Boolean(touched.lastName) && Boolean(errors.lastName)}
+                  helperText={touched.lastName && errors.lastName}
                   sx={{ gridColumn: "span 2" }}
                 />
                 <TextField
@@ -157,8 +157,8 @@ const Form = () => {
                   onChange={handleChange}
                   value={values.location}
                   name="location"
-                //   error={Boolean(touched.location) && Boolean(errors.location)}
-                //   helperText={touched.location && errors.location}
+                  error={Boolean(touched.location) && Boolean(errors.location)}
+                  helperText={touched.location && errors.location}
                   sx={{ gridColumn: "span 4" }}
                 />
                 <TextField
@@ -167,10 +167,10 @@ const Form = () => {
                   onChange={handleChange}
                   value={values.occupation}
                   name="occupation"
-                //   error={
-                //     Boolean(touched.occupation) && Boolean(errors.occupation)
-                //   }
-                //   helperText={touched.occupation && errors.occupation}
+                  error={
+                    Boolean(touched.occupation) && Boolean(errors.occupation)
+                  }
+                  helperText={touched.occupation && errors.occupation}
                   sx={{ gridColumn: "span 4" }}
                 />
                 <Box
@@ -215,8 +215,8 @@ const Form = () => {
               onChange={handleChange}
               value={values.email}
               name="email"
-            //   error={Boolean(touched.email) && Boolean(errors.email)}
-            //   helperText={touched.email && errors.email}
+              error={Boolean(touched.email) && Boolean(errors.email)}
+              helperText={touched.email && errors.email}
               sx={{ gridColumn: "span 4" }}
             />
             <TextField
@@ -226,8 +226,8 @@ const Form = () => {
               onChange={handleChange}
               value={values.password}
               name="password"
-            //   error={Boolean(touched.password) && Boolean(errors.password)}
-            //   helperText={touched.password && errors.password}
+              error={Boolean(touched.password) && Boolean(errors.password)}
+              helperText={touched.password && errors.password}
               sx={{ gridColumn: "span 4" }}
             />
           </Box>

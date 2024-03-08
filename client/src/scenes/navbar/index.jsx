@@ -39,8 +39,7 @@ const Navbar = () => {
   const primaryLight = theme.palette.primary.light;
   const alt = theme.palette.background.alt;
 
-  // const fullName = `${user.firstName} ${user.lastName}`;
-  const fullName ="hello"
+  const fullName = `${user.firstName} ${user.lastName}`;
 
   return (
     <FlexBetween padding="1rem 6%" backgroundColor={alt}>
@@ -57,7 +56,7 @@ const Navbar = () => {
             },
           }}
         >
-         Friendify
+          Friendify
         </Typography>
         {isNonMobileScreens && (
           <FlexBetween
@@ -74,7 +73,6 @@ const Navbar = () => {
         )}
       </FlexBetween>
 
-      {/* DESKTOP NAV */}
       {isNonMobileScreens ? (
         <FlexBetween gap="2rem">
           <IconButton onClick={() => dispatch(setMode())}>
@@ -84,9 +82,9 @@ const Navbar = () => {
               <LightMode sx={{ color: dark, fontSize: "25px" }} />
             )}
           </IconButton>
-          <Message sx={{ fontSize: "25px" }} />
+          {/* <Message sx={{ fontSize: "25px" }} />
           <Notifications sx={{ fontSize: "25px" }} />
-          <Help sx={{ fontSize: "25px" }} />
+          <Help sx={{ fontSize: "25px" }} /> */}
           <FormControl variant="standard" value={fullName}>
             <Select
               value={fullName}
@@ -120,7 +118,6 @@ const Navbar = () => {
         </IconButton>
       )}
 
-      {/* MOBILE NAV */}
       {!isNonMobileScreens && isMobileMenuToggled && (
         <Box
           position="fixed"
@@ -132,7 +129,6 @@ const Navbar = () => {
           minWidth="300px"
           backgroundColor={background}
         >
-          {/* CLOSE ICON */}
           <Box display="flex" justifyContent="flex-end" p="1rem">
             <IconButton
               onClick={() => setIsMobileMenuToggled(!isMobileMenuToggled)}
@@ -141,7 +137,6 @@ const Navbar = () => {
             </IconButton>
           </Box>
 
-          {/* MENU ITEMS */}
           <FlexBetween
             display="flex"
             flexDirection="column"
@@ -159,9 +154,9 @@ const Navbar = () => {
                 <LightMode sx={{ color: dark, fontSize: "25px" }} />
               )}
             </IconButton>
-            <Message sx={{ fontSize: "25px" }} />
+            {/* <Message sx={{ fontSize: "25px" }} />
             <Notifications sx={{ fontSize: "25px" }} />
-            <Help sx={{ fontSize: "25px" }} />
+            <Help sx={{ fontSize: "25px" }} /> */}
             <FormControl variant="standard" value={fullName}>
               <Select
                 value={fullName}
