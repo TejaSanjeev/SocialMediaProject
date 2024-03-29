@@ -50,6 +50,7 @@ const UserWidget = ({ userId, picturePath }) => {
 
   return (
     <WidgetWrapper>
+      {/* FIRST ROW */}
       <FlexBetween
         gap="0.5rem"
         pb="1.1rem"
@@ -79,6 +80,7 @@ const UserWidget = ({ userId, picturePath }) => {
 
       <Divider />
 
+      {/* SECOND ROW */}
       <Box p="1rem 0">
         <Box display="flex" alignItems="center" gap="1rem" mb="0.5rem">
           <LocationOnOutlined fontSize="large" sx={{ color: main }} />
@@ -92,6 +94,7 @@ const UserWidget = ({ userId, picturePath }) => {
 
       <Divider />
 
+      {/* THIRD ROW */}
       <Box p="1rem 0">
         <FlexBetween mb="0.5rem">
           <Typography color={medium}>Who's viewed your profile</Typography>
@@ -109,7 +112,8 @@ const UserWidget = ({ userId, picturePath }) => {
 
       <Divider />
 
-      {/* <Box p="1rem 0">
+      {/* FOURTH ROW */}
+      <Box p="1rem 0">
         <Typography fontSize="1rem" color={main} fontWeight="500" mb="1rem">
           Social Profiles
         </Typography>
@@ -139,7 +143,7 @@ const UserWidget = ({ userId, picturePath }) => {
           </FlexBetween>
           <EditOutlined sx={{ color: main }} />
         </FlexBetween>
-      </Box> */}
+      </Box>
     </WidgetWrapper>
   );
 };
